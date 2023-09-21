@@ -1,0 +1,64 @@
+<header class="fixed-header">
+  <div class="swiper">
+    <button [routerLink]="'/newquote'" class="btn">
+      <img src="../../assets/Images/arrow_back.png" alt="" />
+    </button>
+    <h3>Enter Pet Details</h3>
+  </div>
+</header>
+
+<form>
+  <div class="container">
+    <div class="input">
+      <h4>Pet Name*</h4>
+      <mat-form-field appearance="outline">
+
+        <input matInput placeholder="" formControlName="">
+    
+            
+    </mat-form-field>
+    </div>
+    <hr/>
+
+    <h4>Species*</h4>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Dog</mat-radio-button>
+      <mat-radio-button value="2">Cat</mat-radio-button>
+    </mat-radio-group>
+      <hr />
+
+      <h4>Gender*</h4>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Male</mat-radio-button>
+        <mat-radio-button value="2">Female</mat-radio-button>
+      </mat-radio-group>
+    
+    <hr />
+
+    <h4>Breed*</h4>
+    <mat-form-field appearance="outline">
+      <mat-label>Select</mat-label>
+      <mat-select>
+        <mat-option value="one">Husky</mat-option>
+        <mat-option value="two">Golden retriever</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <hr />
+
+    <h4>Age*</h4>
+    <mat-form-field appearance="outline">
+
+      <input matInput placeholder="1 year" formControlName="">
+  
+          
+  </mat-form-field>
+   
+    <br />
+
+    <button [routerLink]="'/insuranceform'" class="btn">
+      <img src="../../assets/Images/button1.png" alt="" />
+    </button>
+  </div>
+</form>

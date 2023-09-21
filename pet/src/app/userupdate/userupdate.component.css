@@ -1,0 +1,47 @@
+.swiper button{
+     margin-top:20px;
+}
+
+p{
+    font-weight: lighter;
+    font-size:small;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+/* .mat-form-field{
+    border: 1px solid grey; 
+    padding: 5px;
+   
+    height:45px;
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+    border-bottom-left-radius: 60px;
+
+} */
+/* textarea{
+    border: 1px solid grey; 
+    padding: 5px;
+    width:320px;
+    height:40px;
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    color:grey;
+
+    
+} */
+
+
+mat-form-field{
+    width: 330px;
+    margin-left: 20px;
+    
+}
+

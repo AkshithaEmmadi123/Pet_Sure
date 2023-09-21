@@ -1,0 +1,55 @@
+h3{
+    font-weight:500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:x-large;
+    align-items: center;
+    text-align: center;
+
+}
+button{
+    margin-top:10px;
+    margin-left: -10px;
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+    padding: 10px; 
+    z-index: 1000; 
+}
+
+/* body{
+    align-items:center;
+    text-align: center;
+    margin-top: 80px;
+} */
+
+.container{
+    margin-top: 100px;
+}
+
+#mybutton{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgba(54,54,232,1) 35%,rgba(0,212,255,1) 100%);
+    padding: 5px;
+    width:330px;
+    height:55px;
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    margin-top: 350px;
+    margin-left: 20px;
+}
+
+body{
+    margin-left: 70px;
+    
+}
+
+
+
+

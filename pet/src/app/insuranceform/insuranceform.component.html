@@ -1,0 +1,60 @@
+
+  <header class="fixed-header">
+    <button [routerLink]="'/petform'" class="btn">
+      <img src="../../assets/Images/arrow_back.png" alt="" />
+    </button>
+    <h3>Select Insurance Plan</h3>
+ </header>
+
+
+<form>
+  <!-- <input type="text" placeholder="Select Coverage Type*"> -->
+   <div class="container">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Select Coverage Type*</mat-label>
+    <mat-select>
+      <mat-option value="one">Hospitalization Cover</mat-option>
+      <mat-option value="two">Lifetime Cover</mat-option>
+    </mat-select>
+  </mat-form-field>
+ 
+
+  <mat-form-field appearance="outline">
+    <mat-label>Annual Limit*</mat-label>
+    <mat-select>
+      <mat-option value="one">1</mat-option>
+      <mat-option value="two">2</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Deductible*</mat-label>
+    <mat-select>
+      <mat-option value="one">Hospitalization Cover</mat-option>
+      <mat-option value="two">Lifetime Cover</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Co-pay*</mat-label>
+    <mat-select>
+      <mat-option value="one">Hospitalization Cover</mat-option>
+      <mat-option value="two">Lifetime Cover</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Waiting Period*</mat-label>
+    <mat-select>
+      <mat-option value="one">Hospitalization Cover</mat-option>
+      <mat-option value="two">Lifetime Cover</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+ 
+  <button [routerLink]="'/userupdate'" class="btn">
+    <img src="../../assets/Images/button1.png" alt="" />
+  </button>
+  </div>
+</form>

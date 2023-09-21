@@ -1,0 +1,72 @@
+<header class="fixed-header">
+  <div class="swiper">
+    <button [routerLink]="'/insuranceform'" class="btn">
+      <img src="../../assets/Images/arrow_back.png" alt="" />
+    </button>
+    <p>Just a few more questions...</p>
+  </div>
+</header>
+
+<mat-form-field appearance="outline">
+  <mat-label> First Name</mat-label>
+
+  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
+
+  <input
+    matInput
+    placeholder="Should atleast 4char long"
+    formControlName="firstname"
+    ngModel
+    pattern="[a-zA-Z ]*"
+    required
+    type="text"
+  />
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label> Last Name</mat-label>
+
+  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
+
+  <input
+    matInput
+    placeholder="Should atleast 4char long"
+    formControlName="firstname"
+    ngModel
+    pattern="[a-zA-Z ]*"
+    required
+    type="text"
+  />
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <input matInput placeholder="Mobile Number" formControlName="mobilenumber" />
+</mat-form-field>
+
+<mat-form-field appearance="outline" style="height: 150px">
+  <mat-label> Address</mat-label>
+
+  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
+
+  <input
+    matInput
+    placeholder="Enter the complete address"
+    formControlName="firstname"
+    ngModel
+    pattern="[a-zA-Z ]*"
+    required
+    type="text"
+  />
+</mat-form-field>
+
+<mat-form-field appearance="outline">
+  <mat-label>Address Type</mat-label>
+  <mat-select>
+    <mat-option value="one">Hospitalization Cover</mat-option>
+    <mat-option value="two">Lifetime Cover</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button [routerLink]="'/paymentform'" class="btn">
+  <img src="../../assets/Images/button1.png" alt="" />
+</button>
