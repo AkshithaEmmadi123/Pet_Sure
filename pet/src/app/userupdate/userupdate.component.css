@@ -45,3 +45,17 @@ mat-form-field{
     
 }
 
+#mybutton{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgba(54,54,232,1) 35%,rgba(0,212,255,1) 100%);
+    padding: 5px;
+    width:330px;
+    height:55px;
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}

@@ -12,27 +12,24 @@
     <div class="input">
       <h4>Pet Name*</h4>
       <mat-form-field appearance="outline">
-
-        <input matInput placeholder="" formControlName="">
-    
-            
-    </mat-form-field>
+        <input matInput placeholder="" formControlName="" />
+      </mat-form-field>
     </div>
-    <hr/>
+    <hr />
 
     <h4>Species*</h4>
     <mat-radio-group aria-label="Select an option">
       <mat-radio-button value="1">Dog</mat-radio-button>
       <mat-radio-button value="2">Cat</mat-radio-button>
     </mat-radio-group>
-      <hr />
+    <hr />
 
-      <h4>Gender*</h4>
-      <mat-radio-group aria-label="Select an option">
-        <mat-radio-button value="1">Male</mat-radio-button>
-        <mat-radio-button value="2">Female</mat-radio-button>
-      </mat-radio-group>
-    
+    <h4>Gender*</h4>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Male</mat-radio-button>
+      <mat-radio-button value="2">Female</mat-radio-button>
+    </mat-radio-group>
+
     <hr />
 
     <h4>Breed*</h4>
@@ -44,21 +41,13 @@
       </mat-select>
     </mat-form-field>
 
-
     <hr />
 
     <h4>Age*</h4>
     <mat-form-field appearance="outline">
+      <input matInput placeholder="1 year" formControlName="" />
+    </mat-form-field>
 
-      <input matInput placeholder="1 year" formControlName="">
-  
-          
-  </mat-form-field>
-   
-    <br />
-
-    <button [routerLink]="'/insuranceform'" class="btn">
-      <img src="../../assets/Images/button1.png" alt="" />
-    </button>
+    <button type="button" [routerLink]="'/insuranceform'" id="mybutton" class="btn btn-primary">Next</button>
   </div>
 </form>
