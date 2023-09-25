@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-userupdate',
   templateUrl: './userupdate.component.html',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
 })
 export class UserupdateComponent {
   hide=true;
+   
 
+ 
 }
+  

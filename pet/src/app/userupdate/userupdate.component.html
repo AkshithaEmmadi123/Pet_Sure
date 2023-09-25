@@ -7,15 +7,11 @@
   </div>
 </header>
 
-<mat-form-field appearance="outline">
+ <mat-form-field appearance="outline">
   <mat-label> First Name</mat-label>
-
-  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
-
   <input
     matInput
     placeholder="Should atleast 4char long"
-    formControlName="firstname"
     ngModel
     pattern="[a-zA-Z ]*"
     required
@@ -25,33 +21,20 @@
 
 <mat-form-field appearance="outline">
   <mat-label> Last Name</mat-label>
-
-  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
-
-  <input
-    matInput
-    placeholder="Should atleast 4char long"
-    formControlName="firstname"
-    ngModel
-    pattern="[a-zA-Z ]*"
-    required
-    type="text"
-  />
+  <input matInput placeholder="Should atleast 4char long"  ngModel pattern="[a-zA-Z ]*" required type="text"/>
 </mat-form-field>
 
 <mat-form-field appearance="outline">
-  <input matInput placeholder="Mobile Number" formControlName="mobilenumber" />
+  <input matInput placeholder="Mobile Number" ngModel pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}*" required type="text"/>
 </mat-form-field>
 
 <mat-form-field appearance="outline" style="height: 150px">
   <mat-label> Address</mat-label>
 
-  <!-- <input matInput placeholder="Should atleast 4char long" [formControl]="firstname1" -->
-
   <input
     matInput
     placeholder="Enter the complete address"
-    formControlName="firstname"
+    formcontrolName="address"
     ngModel
     pattern="[a-zA-Z ]*"
     required
@@ -67,4 +50,4 @@
   </mat-select>
 </mat-form-field>
 
-<button type="button" [routerLink]="'/paymentform'" id="mybutton" class="btn btn-primary">Next</button>
+<button type="button" [routerLink]="'/paymentform'" id="mybutton" class="btn btn-primary">Next</button> 

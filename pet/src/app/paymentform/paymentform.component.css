@@ -26,9 +26,9 @@ button{
     margin-top: 80px;
 } */
 
-.container{
+/* .container{
     margin-top: 100px;
-}
+} */
 
 #mybutton{
     background: rgb(2,0,36);
@@ -41,8 +41,8 @@ button{
     border-bottom-right-radius: 60px; 
     border-bottom-left-radius: 60px;
     text-align: center;
-    margin-top: 350px;
-    margin-left: 20px;
+    margin-top: 370px;
+    margin-left: 23px;
 }
 
 body{
@@ -50,6 +50,8 @@ body{
     
 }
 
-
+#addpayment{
+    margin-top: 150px;
+}
 
 

@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaymentformComponent } from './paymentform/paymentform.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { SuccessComponent } from './success/success.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +38,8 @@ import { SuccessComponent } from './success/success.component';
     BrowserAnimationsModule,
     MatSelectModule,
     MatRadioModule,
-
-    
+    ReactiveFormsModule,
+    FormsModule
 
 
   ],

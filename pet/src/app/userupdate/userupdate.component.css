@@ -10,7 +10,7 @@ p{
     
 }
 
-/* .mat-form-field{
+ .mat-form-field{
     border: 1px solid grey; 
     padding: 5px;
    
@@ -20,7 +20,7 @@ p{
     border-bottom-right-radius: 60px; 
     border-bottom-left-radius: 60px;
 
-} */
+} 
 /* textarea{
     border: 1px solid grey; 
     padding: 5px;
@@ -57,5 +57,5 @@ mat-form-field{
     border-bottom-left-radius: 60px;
     text-align: center;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 23px;
 }
