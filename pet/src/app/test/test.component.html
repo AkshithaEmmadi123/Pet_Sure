@@ -1,0 +1,57 @@
+<p>test works!</p>
+<!-- Radio Buttons for Animal Selection -->
+<!-- <label>
+  <input type="radio" name="animalOptions" value="dog" [(ngModel)]="selectedAnimal" (change)="onSelectAnimalChange()">
+    Dog
+  </label>
+  <label>
+  <input type="radio" name="animalOptions" value="cat" [(ngModel)]="selectedAnimal" (change)="onSelectAnimalChange()">
+    Cat
+  </label>
+  
+  <h4>Gender*</h4>
+  <mat-radio-group aria-label="Select an option" > 
+    <mat-radio-button value="1">Male</mat-radio-button>
+    <mat-radio-button value="2">Female</mat-radio-button>
+  </mat-radio-group>
+  <hr/>
+  
+  
+  <select *ngIf="breedOptions.length">
+  <option *ngFor="let breed of breedOptions" [value]="breed">{{breed}}</option>
+  </select> -->
+
+
+<!--  -->
+
+  
+<div class="container" id="addpayment">
+  <button (click)="togglePaymentMethods()" class="btn">
+    <img src="../../assets/Images/Button-dark.png" alt=""/>
+  </button>
+</div>
+
+<div *ngIf="showPaymentMethods" class="circle-card-container">
+  <div class="circle-card">
+    <img src="../../assets/Images/sbi.png" alt="">
+
+    
+  </div>
+  <div class="circle-card">
+     <img src="../../assets/Images/hdfc.png" alt="">
+    
+  </div>
+  <div class="circle-card">
+    <img src="../../assets/Images/icici.png" alt="">
+   
+ </div>
+ <div class="circle-card">
+  <img src="../../assets/Images/kotak.png" alt="">
+ 
+</div>
+
+</div>
+
+
+
+

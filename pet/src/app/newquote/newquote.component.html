@@ -11,21 +11,28 @@
 </header>
 <body>
     <div class="container"></div>
-  <form type="action">
+  <form [formGroup]="form">
     <h5>Does your pet suffer from any medical illness/conditions?</h5>
     <td>
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Yes</mat-radio-button>
         <mat-radio-button value="2">No</mat-radio-button>
       </mat-radio-group>
+     
     </td>
    <hr/>
     <div class="cl-mg">
       <h5 style="color: grey">Amount spend on treatment last year?</h5>
       <mat-form-field appearance="outline" >
 
-        <input matInput placeholder="Enter amount (in USD)" formControlName="">
+        <input matInput placeholder="Enter amount (in USD)"  formcontrolname="illness"  required >
       </mat-form-field>
+      <span style="color: red; font-size: 12px;" *ngIf="form.get('illness')?.invalid && form.get('illness')?.touched">
+
+        Not a valid Pet Name
+
+      </span>
+      
     </div>
     <hr/>
 
@@ -61,6 +68,6 @@
       </mat-radio-group>
     </td>
 
-    <button type="button"[routerLink]="'/petform'" id="mybutton" class="btn btn-primary">Next</button>
+    <button (click)="submit()"[routerLink]="'/petform'" id="mybutton" class="btn btn-primary">Next</button>
   </form>
 </body>

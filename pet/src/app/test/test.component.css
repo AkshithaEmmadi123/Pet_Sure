@@ -1,0 +1,32 @@
+/* Style for the container of circle cards */
+.circle-card-container {
+    display: flex; /* Display circle cards in a row */
+    justify-content: space-between; /* Distribute space evenly between circle cards */
+    align-items: center; /* Center vertically */
+    padding: 30px; /* Adjust as needed */
+    /* background-color: #f0f0f0; Background color for the container */
+  }
+  
+  /* Style for individual circle cards */
+  .circle-card {
+    width: 70px; /* Set the width of each circle card */
+    height: 70px; /* Set the height of each circle card */
+    border-radius: 50%; /* Make them circular */
+    background-color: #fff; /* Background color for circle cards */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-right: 10px; /* Spacing between circle cards */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+  
+  /* Style for the images inside circle cards */
+  .circle-card img {
+    max-width: 50%; /* Adjust the image size as needed */
+    max-height: 50%; /* Adjust the image size as needed */
+    display: block; /* Remove image spacing */
+    margin: 0 auto; /* Center the image */
+  }
+  
+
+ 

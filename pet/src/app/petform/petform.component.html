@@ -7,47 +7,80 @@
   </div>
 </header>
 
-<form>
+<form [formGroup]="petform">
   <div class="container">
     <div class="input">
       <h4>Pet Name*</h4>
       <mat-form-field appearance="outline">
-        <input matInput placeholder=""/>
+        <input matInput placeholder="" formControlName="pet_name">
       </mat-form-field>
+      <span style="color: red; font-size: 12px; margin-left: 15px;" *ngIf="petform.get('pet_name')?.invalid && petform.get('pet_name')?.touched">
+
+        Required pet_name
+
+      </span>
     </div>
     <hr />
 
-    <h4>Species*</h4>
-    <mat-radio-group aria-label="Select an option">
-      <mat-radio-button value="1">Dog</mat-radio-button>
-      <mat-radio-button value="2">Cat</mat-radio-button>
-    </mat-radio-group>
-    <hr />
+  <!-- Species -->
+<!-- Species -->
+<h4>Species*</h4>
+<mat-radio-group aria-label="Select an option" >
+  <mat-radio-button value="1">Dog</mat-radio-button>
+  <mat-radio-button value="2">Cat</mat-radio-button>
+</mat-radio-group>
 
-    <h4>Gender*</h4>
-    <mat-radio-group aria-label="Select an option">
-      <mat-radio-button value="1">Male</mat-radio-button>
-      <mat-radio-button value="2">Female</mat-radio-button>
-    </mat-radio-group>
+<hr />
 
-    <hr />
+
+
+
+<h4>Gender*</h4>
+<mat-radio-group aria-label="Select an option" > <!-- Correct typo here -->
+  <mat-radio-button value="1">Male</mat-radio-button>
+  <mat-radio-button value="2">Female</mat-radio-button>
+</mat-radio-group>
+<hr/>
 
     <h4>Breed*</h4>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline"  >
       <mat-label>Select</mat-label>
       <mat-select>
+        <!-- <mat-option *ngFor="let breed of available breeds" [value]="breed">{{breed}}</mat-option> -->
         <mat-option value="one">Husky</mat-option>
         <mat-option value="two">Golden retriever</mat-option>
+        <mat-option value="one">Persian</mat-option>
+        <mat-option value="two">Rag doll</mat-option>
       </mat-select>
     </mat-form-field>
+    <span style="color: red; font-size: 12px;" *ngIf="petform.get('pet_breed')?.touched">
+
+      Enter Age
+
+    </span>
 
     <hr/>
 
     <h4>Age*</h4>
-    <mat-form-field appearance="outline">
-      <input matInput placeholder="1 year"/>
-    </mat-form-field>
 
-    <button type="button" [routerLink]="'/insuranceform'" id="mybutton"class="btn btn-primary">Next</button>
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Age" formControlName="age">
+    </mat-form-field>
+    <!-- <span style="color: red; font-size: 12px;" *ngIf="petform.get('age')?.invalid && petform.get('age')?.touched">
+
+      Enter Age
+
+    </span> -->
+    <button (click)="next()" [routerLink]="'/insuranceform'" id="mybutton"class="btn btn-primary">Next</button>
+  
+    <!--  -->
+    <!-- <div>
+
+      <button type="button" id="loginbutton" class="btn-primary" [disabled]="petform.invalid"
+
+       [class.login-button]="petform.valid" (onClick)="login()">Login</button>
+
+    </div> -->
+    <!--  -->
   </div>
 </form>
