@@ -7,12 +7,61 @@
 
 <div class="container" id="addpayment">
 <body>
-    <button routerLink="'/paymentmethod'" class="btn">
+    <button (click)="togglePaymentMethods()" class="btn">
     <img src="../../assets/Images/Button-dark.png" al=""/>
     </button>
+    </body>
+  </div>
+  
+    <div *ngIf="showPaymentMethods" class="circle-card-container">
+      <mat-card class="payment-form" id="payment">
+        <h2>Enter Credit Card Details</h2>
+        <form (ngSubmit)="processPayment()" [formGroup]="paymentForm">
+          <mat-form-field class="form-group">
+            <mat-label>Card Number</mat-label>
+            <input matInput type="text" id="cardNumber" name="cardNumber" formControlName="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+            <mat-error *ngIf="paymentForm.get('cardNumber')?.hasError('required') && paymentForm.get('cardNumber')?.touched">
+              Card number is required.
+            </mat-error>
+            <mat-error *ngIf="paymentForm.get('cardNumber')?.hasError('pattern')">
+              Card number must be a 16-digit number.
+            </mat-error>
+          </mat-form-field>
+    
+          <mat-form-field class="form-group">
+            <mat-label>Expiration Date (MM/YY)</mat-label>
+            <input matInput type="text" id="expiration" name="expiration" formControlName="expiration">
+            <mat-error *ngIf="paymentForm.get('expiration')?.hasError('required') && paymentForm.get('expiration')?.touched">
+              Expiration date is required.
+            </mat-error>
+            <mat-error *ngIf="paymentForm.get('expiration')?.hasError('pattern')">
+              Expiration date must be in MM/YY format.
+            </mat-error>
+          </mat-form-field>
+    
+          <mat-form-field class="form-group">
+            <mat-label>CVV</mat-label>
+            <input matInput type="password" id="cvv" name="cvv" formControlName="cvv">
+            <mat-error *ngIf="paymentForm.get('cvv')?.hasError('required') && paymentForm.get('cvv')?.touched">
+              CVV is required.
+            </mat-error>
+            <mat-error *ngIf="paymentForm.get('cvv')?.hasError('pattern')">
+              CVV must be a 3-digit number.
+            </mat-error>
+          </mat-form-field>
+    
+          <button type="submit" id="button" class=" btn btn-primary" [disabled]="!paymentForm.valid">Add Card</button>
+        </form>
+      </mat-card>
+    </div>
    
-</body>
-</div>
+
+    <div *ngFor="let card of savedCards" class="saved-card">
+      <p>Card Number: {{ card.cardNumber }}</p>
+      <!-- <p>Expiration Date: {{ card.expiration }}</p>
+      <p>CVV: {{ card.cvv }}</p> -->
+    </div>
+    
 
 
 

@@ -1,6 +1,6 @@
 /* Style for the container of circle cards */
 .circle-card-container {
-    display: flex; /* Display circle cards in a row */
+    display: grid; /* Display circle cards in a row */
     justify-content: space-between; /* Distribute space evenly between circle cards */
     align-items: center; /* Center vertically */
     padding: 30px; /* Adjust as needed */

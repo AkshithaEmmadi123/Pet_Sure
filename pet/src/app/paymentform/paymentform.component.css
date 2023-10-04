@@ -55,3 +55,40 @@ body{
 }
 
 
+#payment{
+    display:flex;
+    align-items:center;
+    height: 360px;
+    width: 320px;
+    margin-left: 28px;
+    margin-top: 30px;
+    font-size:medium;
+}
+
+
+mat-form-field {
+    display:flex;
+    height: 70px;
+    width:300px;
+    border-radius: 5px;
+    align-items:center;
+    margin-left: 0px;
+    
+}
+
+
+#button{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgba(54,54,232,1) 35%,rgba(0,212,255,1) 100%);
+    padding: 5px;
+    width:200px;
+    height:50px;
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 50px;
+
+}

@@ -20,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { TestComponent } from './test/test.component';
 import { MatError } from '@angular/material/form-field';
+import { Test2Component } from './test2/test2.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { MatError } from '@angular/material/form-field';
     UserupdateComponent,
     PaymentformComponent,
     SuccessComponent,
-    TestComponent
+    TestComponent,
+    Test2Component
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { MatError } from '@angular/material/form-field';
     MatRadioModule,
     ReactiveFormsModule,
     FormsModule,
+    MatCardModule,
    
     
 

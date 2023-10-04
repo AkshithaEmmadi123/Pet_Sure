@@ -14,7 +14,7 @@ export class NewquoteComponent {
   // });
 
   form=new FormGroup({
-    illness:new FormControl('',[Validators.required])
+    illness:new FormControl('',[Validators.required , Validators.pattern(/^\d{10}$/)])
   })
 
 
